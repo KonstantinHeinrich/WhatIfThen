@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
+	<ConfigVersions>
+		<Metadata name="Catalog.Вопросы" id="f86e168a-499c-49e4-b4da-0ab8aa5b69ee" configVersion="fb38a51da1c9ca41b7cd57b2ebf73e3300000000">
+			<Metadata name="Catalog.Вопросы.Attribute.Блиц" id="348b7b7c-2651-45e7-930a-ed52ef4fd249"/>
+			<Metadata name="Catalog.Вопросы.Attribute.Картинка" id="571a21c4-4624-4273-8b8e-447284384aa8"/>
+			<Metadata name="Catalog.Вопросы.Attribute.Автор" id="cb590282-c003-485f-a376-14cd16e396ff"/>
+		</Metadata>
+		<Metadata name="Catalog.Вопросы.Form.ФормаСписка" id="45352912-aaec-44e8-9ec0-2eea88a089b8" configVersion="e03a290b72cf1d4096cbf5f6b6fc797f00000000"/>
+		<Metadata name="Catalog.Вопросы.Form.ФормаСписка.Form" id="45352912-aaec-44e8-9ec0-2eea88a089b8.0" configVersion="207a0d437a91b3478140f27b5c08a09200000000"/>
+		<Metadata name="Catalog.Вопросы.Form.ФормаЭлемента" id="b905f39c-30ad-41f3-aec2-fe1be0440874" configVersion="5687235d0f126a449b0a48be578ad3b600000000"/>
+		<Metadata name="Catalog.Вопросы.Form.ФормаЭлемента.Form" id="b905f39c-30ad-41f3-aec2-fe1be0440874.0" configVersion="d38a3015602da64c992850279ff513a900000000"/>
+		<Metadata name="CommonForm.Форма" id="ee8c19ab-b5f7-4200-bba3-c8e8c769b83d" configVersion="b5aaf59e6076ae479315ddee1e809e9400000000"/>
+		<Metadata name="CommonForm.Форма.Form" id="ee8c19ab-b5f7-4200-bba3-c8e8c769b83d.0" configVersion="4805cdb976d82d43957f22638ba9157300000000"/>
+		<Metadata name="CommonForm.ФормаКонстант" id="e37b2dc7-9888-470d-843e-89f1cc3f17ee" configVersion="457d2597e47e6146a807df33db357a7d00000000"/>
+		<Metadata name="CommonForm.ФормаКонстант.Form" id="e37b2dc7-9888-470d-843e-89f1cc3f17ee.0" configVersion="1a839131ae047342a88926a3a8fdee5a00000000"/>
+		<Metadata name="CommonPicture.Волчок" id="ea61e238-0201-4654-b163-5d20930644c4" configVersion="70c8605dd6a31d47ab1adcd8c923fd3800000000"/>
+		<Metadata name="CommonPicture.Волчок.Picture" id="ea61e238-0201-4654-b163-5d20930644c4.0" configVersion="a537b2e90fbb8f4d9da8fa4a8c0592ad00000000"/>
+		<Metadata name="CommonPicture.Картинки" id="86f35f44-2171-4a48-b755-00f3ac5034a5" configVersion="2751817b46c69d40af34ddf111c7bef800000000"/>
+		<Metadata name="CommonPicture.Картинки.Picture" id="86f35f44-2171-4a48-b755-00f3ac5034a5.0" configVersion="adacb1fcb386b94f8df7ac857726699400000000"/>
+		<Metadata name="CommonPicture.Молния" id="e7dd9050-b7c6-4647-bc28-8ce9492fd3b1" configVersion="2c9049733965c640bcb0917a5585ff4300000000"/>
+		<Metadata name="CommonPicture.Молния.Picture" id="e7dd9050-b7c6-4647-bc28-8ce9492fd3b1.0" configVersion="b2df10ea18874044a4e5474bc066d9ec00000000"/>
+		<Metadata name="CommonPicture.Секундомер" id="63943197-958d-4096-b42b-affa80fa663d" configVersion="a116ad794a887348aea699c80dfc699b00000000"/>
+		<Metadata name="CommonPicture.Секундомер.Picture" id="63943197-958d-4096-b42b-affa80fa663d.0" configVersion="1d6cb45e9663cc4890655404a416474a00000000"/>
+		<Metadata name="Configuration.ЧтоЕслиТогда" id="6e712eb0-73c9-4c1a-b90a-00c3840b67e5" configVersion="5828ac80625d9f41b694c6096f49b6ca00000000"/>
+		<Metadata name="Configuration.ЧтоЕслиТогда.HomePageWorkArea" id="393b1526-0262-4d24-8f3b-dcd2acbf7547.8" configVersion="a39c3f8bbc3f6d47a28f285d3b098ddb00000000"/>
+		<Metadata name="Configuration.ЧтоЕслиТогда.ManagedApplicationModule" id="393b1526-0262-4d24-8f3b-dcd2acbf7547.6" configVersion="426de48254ec364b8a5046574734863500000000"/>
+		<Metadata name="Constant.ЗаголовокИгры" id="806f3b2f-a546-45b8-969a-e0e1ee5c899a" configVersion="32a4ed9b6a0cbf4db8bc5eb4c75525b700000000"/>
+		<Metadata name="Language.Русский" id="18ac21df-b0b8-4679-a5f6-355749a0f081" configVersion="9fd428f2a2522d4692851bc1244b52f000000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

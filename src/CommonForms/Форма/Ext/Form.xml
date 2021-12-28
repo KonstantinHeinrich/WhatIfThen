@@ -1,0 +1,1061 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<Button name="ПоказатьСчет" id="81">
+					<Type>UsualButton</Type>
+					<Height>2</Height>
+					<CommandName>Form.Command.ПоказатьСчет</CommandName>
+					<Font ref="style:NormalTextFont" height="24" kind="StyleItem"/>
+					<ExtendedTooltip name="ПоказатьСчетРасширеннаяПодсказка" id="82"/>
+				</Button>
+				<Button name="ПоказатьВолчок" id="155">
+					<Type>UsualButton</Type>
+					<Height>5</Height>
+					<CommandName>Form.Command.ПоказатьВолчок</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вол</v8:content>
+						</v8:item>
+					</Title>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
+					<ExtendedTooltip name="ПоказатьВолчокРасширеннаяПодсказка" id="156"/>
+				</Button>
+				<Button name="ПоказатьКартинки" id="83">
+					<Type>UsualButton</Type>
+					<Height>5</Height>
+					<CommandName>Form.Command.ПоказатьКартинки</CommandName>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
+					<ExtendedTooltip name="ПоказатьКартинкиРасширеннаяПодсказка" id="84"/>
+				</Button>
+				<LabelDecoration name="Декорация1" id="32">
+					<Width>2</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="34"/>
+				</LabelDecoration>
+				<LabelField name="Время" id="27">
+					<DataPath>Время</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=2; ЧН=00; ЧВН=</v8:content>
+						</v8:item>
+					</Format>
+					<TextColor>web:Black</TextColor>
+					<Font ref="style:NormalTextFont" height="100" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ContextMenu name="ВремяКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<Button name="Минута" id="30">
+					<Type>UsualButton</Type>
+					<Height>5</Height>
+					<CommandName>Form.Command.МинутаПошла</CommandName>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
+					<ExtendedTooltip name="МинутаРасширеннаяПодсказка" id="31"/>
+				</Button>
+				<Button name="Блиц" id="59">
+					<Type>UsualButton</Type>
+					<Height>5</Height>
+					<CommandName>Form.Command.Блиц</CommandName>
+					<ShapeRepresentation>WhenActive</ShapeRepresentation>
+					<ExtendedTooltip name="БлицРасширеннаяПодсказка" id="60"/>
+				</Button>
+				<LabelDecoration name="Декорация2" id="41">
+					<Width>2</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="43"/>
+				</LabelDecoration>
+				<CheckBoxField name="ПомощьКлуба" id="38">
+					<DataPath>ПомощьКлуба</DataPath>
+					<TitleFont ref="style:NormalTextFont" height="16" kind="StyleItem"/>
+					<CheckBoxType>CheckBox</CheckBoxType>
+					<ContextMenu name="ПомощьКлубаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПомощьКлубаРасширеннаяПодсказка" id="40"/>
+				</CheckBoxField>
+				<LabelDecoration name="Декорация3" id="44">
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="46"/>
+				</LabelDecoration>
+				<InputField name="ДопМинуты" id="35">
+					<DataPath>ДопМинуты</DataPath>
+					<TitleFont ref="style:NormalTextFont" height="16" kind="StyleItem"/>
+					<SpinButton>true</SpinButton>
+					<Font ref="style:NormalTextFont" height="16" kind="StyleItem"/>
+					<ContextMenu name="ДопМинутыКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДопМинутыРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="66"/>
+			<ChildItems>
+				<Page name="ГруппаСчет" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа счет</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ГруппаСчетРасширеннаяПодсказка" id="2"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗнатоки" id="3">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа знатоки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа знатоки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>1</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗнатокиРасширеннаяПодсказка" id="4"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗнатоки" id="50">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:NormalTextFont" height="48" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Знатоки</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="ДекорацияЗнатокиКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ДекорацияЗнатокиРасширеннаяПодсказка" id="52"/>
+								</LabelDecoration>
+								<LabelField name="СчетЗнатоки" id="7">
+									<DataPath>СчетЗнатоки</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<Width>75</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<Font ref="style:NormalTextFont" height="400" kind="StyleItem"/>
+									<ContextMenu name="СчетЗнатокиКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="СчетЗнатокиРасширеннаяПодсказка" id="9"/>
+								</LabelField>
+								<UsualGroup name="ГруппаКнопкиЗнатоки" id="13">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки знатоки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки знатоки</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКнопкиЗнатокиРасширеннаяПодсказка" id="14"/>
+									<ChildItems>
+										<Button name="ОчкоЗнатокам" id="17">
+											<Type>UsualButton</Type>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<CommandName>Form.Command.ОчкоЗнатокам</CommandName>
+											<ShapeRepresentation>Always</ShapeRepresentation>
+											<ExtendedTooltip name="ОчкоЗнатокамРасширеннаяПодсказка" id="18"/>
+										</Button>
+										<Button name="МинусОчкоЗнатокам" id="19">
+											<Type>UsualButton</Type>
+											<Height>2</Height>
+											<CommandName>Form.Command.МинусОчкоЗнатокам</CommandName>
+											<ShapeRepresentation>Always</ShapeRepresentation>
+											<ExtendedTooltip name="МинусОчкоЗнатокамРасширеннаяПодсказка" id="20"/>
+										</Button>
+										<Button name="ОбнулитьОчкиЗнатокам" id="61">
+											<Type>UsualButton</Type>
+											<MaxWidth>3</MaxWidth>
+											<Height>2</Height>
+											<CommandName>Form.Command.ОбнулитьОчкиЗнатокам</CommandName>
+											<ExtendedTooltip name="ОбнулитьОчкиЗнатокамРасширеннаяПодсказка" id="62"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="Декорация4" id="56">
+							<Width>3</Width>
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="58"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаТелезрители" id="5">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа телезрители</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа телезрители</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>1</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТелезрителиРасширеннаяПодсказка" id="6"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияТелезрители" id="53">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:NormalTextFont" height="48" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Телезрители</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<ContextMenu name="ДекорацияТелезрителиКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ДекорацияТелезрителиРасширеннаяПодсказка" id="55"/>
+								</LabelDecoration>
+								<LabelField name="СчетТелезрители" id="10">
+									<DataPath>СчетТелезрители</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<Width>75</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<Font ref="style:NormalTextFont" height="400" kind="StyleItem"/>
+									<ContextMenu name="СчетТелезрителиКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="СчетТелезрителиРасширеннаяПодсказка" id="12"/>
+								</LabelField>
+								<UsualGroup name="ГруппаКнопкиТелезрители" id="15">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки телезрители</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки телезрители</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКнопкиТелезрителиРасширеннаяПодсказка" id="16"/>
+									<ChildItems>
+										<Button name="ОчкоТелезрителям" id="21">
+											<Type>UsualButton</Type>
+											<Height>2</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<CommandName>Form.Command.ОчкоТелезрителям</CommandName>
+											<ShapeRepresentation>Always</ShapeRepresentation>
+											<ExtendedTooltip name="ОчкоТелезрителямРасширеннаяПодсказка" id="22"/>
+										</Button>
+										<Button name="МинусОчкоТелезрителям" id="23">
+											<Type>UsualButton</Type>
+											<Height>2</Height>
+											<CommandName>Form.Command.МинусОчкоТелезрителям</CommandName>
+											<ShapeRepresentation>Always</ShapeRepresentation>
+											<ExtendedTooltip name="МинусОчкоТелезрителямРасширеннаяПодсказка" id="24"/>
+										</Button>
+										<Button name="ОбнулитьОчкиТелезрителям" id="63">
+											<Type>UsualButton</Type>
+											<Height>2</Height>
+											<CommandName>Form.Command.ОбнулитьОчкиТелезрителям</CommandName>
+											<ExtendedTooltip name="ОбнулитьОчкиТелезрителямРасширеннаяПодсказка" id="64"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВолчок" id="124">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа волчок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа волчок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ГруппаВолчокРасширеннаяПодсказка" id="125"/>
+					<ChildItems>
+						<Table name="СписокВопросов" id="126">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Width>60</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Header>false</Header>
+							<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<HorizontalStretch>false</HorizontalStretch>
+							<DataPath>СписокВопросов</DataPath>
+							<RowPictureDataPath>СписокВопросов.Picture</RowPictureDataPath>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<Font ref="style:NormalTextFont" height="28" kind="StyleItem"/>
+							<SearchStringLocation>None</SearchStringLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<ContextMenu name="СписокВопросовКонтекстноеМеню" id="127"/>
+							<AutoCommandBar name="СписокВопросовКоманднаяПанель" id="128"/>
+							<ExtendedTooltip name="СписокВопросовРасширеннаяПодсказка" id="129"/>
+							<SearchStringAddition name="СписокВопросовСтрокаПоиска" id="130">
+								<AdditionSource>
+									<Item>СписокВопросов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВопросовСтрокаПоискаКонтекстноеМеню" id="131"/>
+								<ExtendedTooltip name="СписокВопросовСтрокаПоискаРасширеннаяПодсказка" id="132"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокВопросовСостояниеПросмотра" id="133">
+								<AdditionSource>
+									<Item>СписокВопросов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВопросовСостояниеПросмотраКонтекстноеМеню" id="134"/>
+								<ExtendedTooltip name="СписокВопросовСостояниеПросмотраРасширеннаяПодсказка" id="135"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокВопросовУправлениеПоиском" id="136">
+								<AdditionSource>
+									<Item>СписокВопросов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокВопросовУправлениеПоискомКонтекстноеМеню" id="137"/>
+								<ExtendedTooltip name="СписокВопросовУправлениеПоискомРасширеннаяПодсказка" id="138"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="СписокВопросовПометка" id="142">
+									<DataPath>СписокВопросов.Check</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СписокВопросовПометкаКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="СписокВопросовПометкаРасширеннаяПодсказка" id="144"/>
+								</CheckBoxField>
+								<InputField name="СписокВопросовЗначение" id="139">
+									<DataPath>СписокВопросов.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокВопросовЗначениеКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="СписокВопросовЗначениеРасширеннаяПодсказка" id="141"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="ГруппаСамВолчок" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сам волчок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сам волчок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСамВолчокРасширеннаяПодсказка" id="146"/>
+							<ChildItems>
+								<LabelField name="Волчок" id="150">
+									<DataPath>Волчок</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<Width>75</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<Font ref="style:NormalTextFont" height="450" kind="StyleItem"/>
+									<ContextMenu name="ВолчокКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ВолчокРасширеннаяПодсказка" id="152"/>
+								</LabelField>
+								<Button name="ПускВолчка" id="153">
+									<Type>UsualButton</Type>
+									<Height>2</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<CommandName>Form.Command.ПускВолчка</CommandName>
+									<ExtendedTooltip name="ПускВолчкаРасширеннаяПодсказка" id="154"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКартинки" id="67">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Карт</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа картинки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="68"/>
+					<ChildItems>
+						<Pages name="ГруппаВопросы" id="69">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вопросы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа вопросы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаВопросыРасширеннаяПодсказка" id="70"/>
+							<ChildItems>
+								<Page name="ГруппаВыберитеВопрос" id="76">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выберите вопрос</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа выберите вопрос</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаВыберитеВопросРасширеннаяПодсказка" id="77"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияВыберитеВопрос" id="78">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Font ref="style:NormalTextFont" height="150" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выберите вопрос</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<ContextMenu name="ДекорацияВыберитеВопросКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="ДекорацияВыберитеВопросРасширеннаяПодсказка" id="80"/>
+											<Events>
+												<Event name="Click">ДекорацияВыберитеВопросНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<LabelDecoration name="ДекорацияИсточник" id="47">
+			<Visible>false</Visible>
+			<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часть вопросов взято из базы http://db.chgk.info</v8:content>
+				</v8:item>
+			</Title>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<HorizontalAlign>Right</HorizontalAlign>
+			<ContextMenu name="ДекорацияИсточникКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="ДекорацияИсточникРасширеннаяПодсказка" id="49"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СчетЗнатоки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Знатоки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СчетТелезрители" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телезрители</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Время" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДопМинуты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп. минуты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПомощьКлуба" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помощь клуба</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяОкончания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокВопросов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список вопросов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="Волчок" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Волчок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Время</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Время</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">10</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Blue</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Время</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Время</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Время</dcsset:left>
+						<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">10</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkMagenta</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СчетЗнатоки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СчетЗнатоки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">5</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СчетЗнатоки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СчетЗнатоки</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">5</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СчетТелезрители</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СчетТелезрители</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">5</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkRed</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СчетТелезрители</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СчетТелезрители</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">5</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Red</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокВопросов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокВопросов.Пометка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="28" bold="false" italic="false" underline="false" strikeout="true" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОчкоЗнатокам" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очко знатокам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очко знатокам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceUpArrowGreen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчкоЗнатокам</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОчкоТелезрителям" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очко телезрителям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очко телезрителям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceUpArrowGreen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОчкоТелезрителям</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="МинусОчкоЗнатокам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минус очко знатокам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минус очко знатокам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceDownArrowRed</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>МинусОчкоЗнатокам</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="МинусОчкоТелезрителям" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минус очко телезрителям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минус очко телезрителям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceDownArrowRed</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>МинусОчкоТелезрителям</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="МинутаПошла" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минута пошла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минута пошла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Space</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.Секундомер</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>МинутаПошла</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Блиц" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блиц</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блиц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Молния</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Блиц</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОбнулитьОчкиЗнатокам" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>0</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обнулить очки знатокам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбнулитьОчкиЗнатокам</Action>
+		</Command>
+		<Command name="ОбнулитьОчкиТелезрителям" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>0</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обнулить очки телезрителям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбнулитьОчкиТелезрителям</Action>
+		</Command>
+		<Command name="ПоказатьСчет" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>0:0</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать счет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСчет</Action>
+		</Command>
+		<Command name="ПоказатьКартинки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать картинки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать картинки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Картинки</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьКартинки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПускВолчка" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пуск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пуск волчка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПускВолчка</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПоказатьВолчок" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать волчок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать волчок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Волчок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьВолчок</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>
